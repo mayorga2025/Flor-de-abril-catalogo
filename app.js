@@ -101,7 +101,6 @@
 
   function getModalHTML(c){
     const hasGender = Array.isArray(c.genders) && c.genders.length > 0;
-    // Mostrar siempre la imagen principal de portada al abrir el modal.
     const initialImage = c.image || '';
     return `<h2 style="margin-bottom:12px">${c.name}</h2>
       <p style="margin-bottom:16px">${c.description}</p>

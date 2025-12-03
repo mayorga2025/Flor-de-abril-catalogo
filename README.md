@@ -16,14 +16,22 @@ Usa las mismas imágenes y logo que el proyecto original.
 ## Cómo probar localmente
 En PowerShell:
 ```powershell
+<<<<<<< HEAD
 cd flor-de-abril
+=======
+cd flor-de-vida
+>>>>>>> ed2273db9fadead445d3756544ecffcd65a2ff10
 python -m http.server
 # Abrir http://localhost:8000 o simplemente abrir `index.html` directamente
 ```
 (Si no tienes Python, abre `index.html` directamente o usa la extensión Live Server.)
 
 ## Despliegue en GitHub Pages
+<<<<<<< HEAD
 Opción 1: Copia la carpeta `flor-de-abril` a `docs/` (o su contenido) para servirla.
+=======
+Opción 1: Copia la carpeta `flor-de-vida` a `docs/` (o su contenido) para servirla.
+>>>>>>> ed2273db9fadead445d3756544ecffcd65a2ff10
 ```powershell
 # Desde la raíz del repo
 Remove-Item docs -Recurse -Force -ErrorAction SilentlyContinue
@@ -34,6 +42,11 @@ git push origin main
 ```
 Luego en Settings > Pages: seleccionar branch `main` y carpeta `/docs`.
 
+<<<<<<< HEAD
+=======
+Opción 2: Mantener ambos (build de Vite y esta versión) en subcarpetas y hacer deploy manual del que quieras.
+
+>>>>>>> ed2273db9fadead445d3756544ecffcd65a2ff10
 ## Características
 - Filtro por región (Catálogo).
 - Modal con selección de talla, color, cantidad y fecha.
