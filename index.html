@@ -23,6 +23,7 @@
           <button data-scroll="emprendedor">Sobre Nosotros</button>
           <button data-scroll="contacto">Contacto</button>
           <button class="btn primary" data-scroll="contacto">Reservar</button>
+          <button id="cartToggle" class="btn outline" aria-label="Abrir carrito">Carrito (<span id="cartCount">0</span>)</button>
         </nav>
         <button id="menuToggle" class="btn ghost mobile-toggle" aria-label="Abrir menú">☰</button>
       </div>
@@ -32,6 +33,7 @@
         <button data-scroll="emprendedor">Sobre Nosotros</button>
         <button data-scroll="contacto">Contacto</button>
         <button class="btn primary" data-scroll="contacto">Reservar</button>
+        <button id="cartToggleMobile" class="btn outline" aria-label="Abrir carrito">Carrito (<span id="cartCountMobile">0</span>)</button>
       </nav>
     </header>
 
@@ -139,6 +141,22 @@
   <p>© 2025 Flor de Abril - Trajes Típicos de Nicaragua</p>
       </div>
     </footer>
+
+    <!-- Carrito lateral -->
+    <aside id="cartDrawer" class="cart-drawer hidden" aria-hidden="true" role="dialog">
+      <div class="cart-header">
+        <h3>Tu Carrito de Alquiler</h3>
+        <button id="cartClose" class="modal-close" aria-label="Cerrar carrito">✕</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total"><span>Total estimado:</span> <strong id="cartTotal">C$ 0</strong></div>
+        <div class="cart-actions">
+          <button id="cartClear" class="btn ghost">Vaciar</button>
+          <button id="cartWhatsApp" class="btn primary" disabled>Reservar por WhatsApp</button>
+        </div>
+      </div>
+    </aside>
 
     <!-- Modal -->
     <div id="modal" class="modal hidden" aria-hidden="true" role="dialog">
